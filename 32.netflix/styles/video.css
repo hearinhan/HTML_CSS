@@ -1,0 +1,130 @@
+.video_grid {
+    display: grid;
+    column-gap: 5px;
+    row-gap: 2px;
+}
+
+.video_contents {
+    display: grid;
+    column-gap: 5px;
+    row-gap: 2px;
+}
+
+.video_title {
+    padding: 5px 24px;
+}
+.video_title p {
+    font-size: 30px;
+}
+
+.video_slider {
+    padding: 0px 24px;
+    align-items: center;
+
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.video_slider::-webkit-scrollbar {
+    display: none;
+}
+.video_slider img {
+    object-fit: cover;
+    cursor: pointer;
+
+    transition: all 0.2s linear;
+}
+/* .video_slider img:hover {
+    transform: scale(1.2);
+} */
+
+
+/*media query=반응형 웹사이트*/
+
+@media (max-width:400px) {
+    .video_slider img {
+        padding: 0 2px;
+        width: 15vw;
+        height: 23vw;
+    }
+    .video_slider img:hover {
+        transform: scale(1.1);
+        width: 16vw;
+        height: 25vw;
+    }
+}
+@media (min-width:401px) and (max-width:750px) {
+    .video_slider img {
+        padding: 0 4px;
+        width: 15vw;
+        height: 23vw;
+    }
+    .video_slider img:hover {
+        transform: scale(1.1);
+        width: 16vw;
+        height: 25vw;
+    }
+}
+@media (min-width:751px) and (max-width:999px) {
+    .video_slider img {
+        padding: 0 4px;
+        width: 15vw;
+        height: 23vw;
+    }
+    .video_slider img:hover {
+        transform: scale(1.1);
+        width: 16vw;
+        height: 25vw;
+    }
+}
+@media (min-width:1000px) and (max-width:1400px) {
+    .video_slider img {
+        padding: 0 6px;
+        width: 15vw;
+        height: 23vw;
+    }
+    .video_slider img:hover {
+        transform: scale(1.1);
+        width: 16vw;
+        height: 25vw;
+    }
+}
+@media (min-width:1401px) and (max-width:1700px) {
+    .video_slider img {
+        padding: 0 6px;
+        width: 14vw;
+        height: 22vw;
+    }
+    .video_slider img:hover {
+        transform: scale(1.1);
+        width: 15vw;
+        height: 23vw;
+    }
+}
+@media (min-width:1701px) and (max-width:2700px) {
+    .video_slider img {
+        padding: 0 6px;
+        width: 11vw;
+        height: 18vw;
+    }
+    .video_slider img:hover {
+        transform: scale(1.1);
+        width: 12vw;
+        height: 19vw;
+    }
+}
+@media (min-width:2701px) {
+    .video_slider img {
+        padding: 0 8px;
+        width: 10vw;
+        height: 16vw;
+    }
+    .video_slider img:hover {
+        transform: scale(1.1);
+        width: 11vw;
+        height: 17vw;
+    }
+}

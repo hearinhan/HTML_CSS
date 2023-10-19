@@ -1,0 +1,32 @@
+/* header */
+.header {
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+/* left-header */
+.left-header {
+    display: flex;
+}
+
+.header_logo {
+    height: 24px;
+}
+.header_profile {
+    height: 24px;
+    border: none;
+    border-radius: 2px;
+}

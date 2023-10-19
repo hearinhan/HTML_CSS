@@ -1,0 +1,82 @@
+/* nav */
+
+/* .nav {
+    min-height: 1152px;
+    width: 100%;
+    background-image: url(https://occ-0-993-395.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABaJJIdyKMNvEcWhAtI5Xk12MQLY8DLxAkM2k8unVHyRordNL9Jn726cLoEmP_DAn44vwE3_l9dWTpDQTvmzsk6REyj4veXm9bvQ8.jpg?r=e19);
+} */
+
+.nav {
+    position: relative;
+}
+
+.nav img {
+    width: 100%;
+}
+
+.nav_detail {
+    position: absolute;
+    top: 25vw; /* 화면에 맞춰 비율을 계산해 위치 유동적 움직임 */
+    padding: 0 24px;
+}
+
+.nav_title {
+    font-size: 10vw;
+}
+
+.nav_buttons{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+.nav_play {
+    background-color: rgba(225, 225, 225, 0.2);
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+
+    padding-top: 8px;
+    padding-right: 40px;
+    padding-bottom: 8px;
+    padding-left: 40px;
+
+    cursor: pointer;
+}
+.nav_list {
+    background-color: rgba(225, 225, 225, 0.2);
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+
+    padding-top: 8px;
+    padding-right: 40px;
+    padding-bottom: 8px;
+    padding-left: 40px;
+    
+    cursor: pointer;
+}
+
+.nav_description {
+    width: 50vw;
+    
+    /* max-width: 430px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; */
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /*최대 3줄을 보여주게 한다. */
+    -webkit-box-orient: vertical;
+    max-width: 430px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-family: Arial;
+    font-size: 14px;
+}
